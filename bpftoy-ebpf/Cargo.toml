@@ -1,0 +1,15 @@
+[package]
+name = "bpftoy-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bpftoy"
+path = "src/main.rs"
+
+[dependencies]
+aya-ebpf = "0.1"
+aya-log-ebpf = "0.1"
+
+[features]
+default = []

@@ -1,0 +1,19 @@
+[package]
+name = "bpftoy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya = { version = "0.11", features = ["async_tokio"] }
+tokio = { version = "1.0", features = ["macros", "rt", "rt-multi-thread", "net", "signal", "time"] }
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.10"
+clap = { version = "4.0", features = ["derive"] }
+num_cpus = "1.0"
+bytes = "1.0"
+
+[workspace]
+members = [
+    "bpftoy-ebpf",
+]
